@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital@1&family=Montserrat&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital@1&family=Montserrat&family=Roboto&family=Secular+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+    <title>UCF</title>
+    
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            font-family: 'Montserrat', sans-serif;
+        }
+        header{
+            display: flex;
+            width: 100%;
+            height: 85px;
+            margin-top: 10px;
+            border-bottom: 1px solid black;
+            font-family: 'Chakra Petch', sans-serif;
+            /*  */
+        }
+        #UFCpic{
+            width: 150px;
+            height: 80px;
+            
+        }
+        ul{
+            align-self: flex-end;
+            margin-right: 500px;
+        }
+        li{
+            display: inline;
+            margin-left: 10px;
+            margin-right: 10px;
+            text-decoration: none;
+        }
+        .nav1{
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            
+        }
+        .nav2{
+            display: flex;
+            
+            
+            
+            
+        }
+        #UFCOnline{
+            font-size: 40px;
+            font-weight: bold;
+        }
+        button{
+            border-radius: 30px;
+            background-color: black;
+            color: burlywood;
+            font-weight: bold;
+            height: 30px;
+            margin-left: 10px;
+        }
+
+        .container{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            justify-content: space-evenly;
+            margin-left: 50px;
+        }
+
+        .container > div{
+            width: 400px;
+            height: 500px;
+            background-color: antiquewhite;
+            border: 1px solid black;
+            margin: 20px;
+        }
+        .text{
+            margin: 0 auto;
+            width: 1900px;
+
+        }
+
+        .title{
+            font-size: 70px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+        }
+
+        .Subtitle{
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .container > div{
+            overflow: hidden;
+        }
+
+        .container > div > img{
+            width: 400px;
+            height: 500px;
+            
+            position: absolute;
+        }
+        .container > div > div > p{
+            margin-top: 100px;
+            margin-left: 30px;
+            margin-right: 30px;
+            font-size: 20px;
+            font-family: 'Roboto', sans-serif;
+            font-family: 'Secular One', sans-serif;
+            
+        
+    
+        
+        }
+
+        .container > div > div > button{
+            border-radius: 30px;
+            background-color: black;
+            color: burlywood;
+            margin-top: 100px;
+            height: 30px;
+            margin-left: 10px;
+        }
+
+        .inside{
+            background-color: white;
+            width: 330px;
+            height: 450px;
+            margin-top: 20.5px;
+            margin-left: 20px;
+            margin-right: 20px;
+            overflow: hidden;
+            position: absolute;
+            border: 1px solid;
+            padding: 10px;
+            box-shadow: 5px 10px 18px #888888;
+            display: none;
+        }
+
+        .sec2{
+            display: flex;
+            grid-template-columns: auto auto;
+            margin: 0 auto;
+            width: 1200px;
+            height: 1000px;
+        }
+
+        .left-side{
+            background-color: black;
+            width:45%;
+            
+        }
+
+        .right-side{
+            background-color: antiquewhite;
+            width:55%;
+            
+        }
+
+        fieldset{
+            margin: 50px;
+        }
+
+        form{
+            margin: 50px;
+        }
+
+        footer{
+            width: 100%;
+            height: 400px;
+            background-color: black;
+            color: white;
+
+        }
+
+        .left-side > img{
+            width: 600px;
+        }
+
+        a:link { text-decoration: none; }
+        a:visited { text-decoration: none; }
+        a:hover { text-decoration: none; }
+        a:active { text-decoration: none; }
+    </style>
+</head>
+<header>
+    <img id="UFCpic" src="img/UCF.png">
+
+    <div class="nav1">
+            
+            
+            <p id="UFCOnline">UCF Online<p>
+            
+        
+        
+        <div class="nav2">
+            <ul>
+                <li><a href="#home">Online Degree</a></li>
+                <li><a href="#news">Tuition</a></li>
+                <li><a href="#contact">Life On Campus</a></li>
+                <li><a href="#contact">Newsroom</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+
+            <button>Apply Now</button>
+            <button>Request Info</button>
+
+            
+        </div>
+    </div>
+</header>
+<body>
+    <div class="text">
+        <p class="title">UCF Online Admission</p>
+        <p class="Subtitle">One Step Closer</p>
+        <br>
+        <p>ASU Online admission requirements vary depending on your chosen degree and student status. 
+            Select your student type below to find admission information and additional resources unique to your academic journey.
+            Have a few more questions? Check out ASU Online's <a href="">frequently asked questions.</a></p>
+    </div>
+
+    <div class="container">
+        <div class="flex1">
+            
+            <img src="img/peaceSign.jpg" alt="">
+
+            <div class="inside" id="1">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quisdeda daawdawd wadadaw rwgh vdw</p>
+                <button>Explore</button>
+            </div>
+
+        </div>
+
+        <div class="flex2">
+
+            <img src="img/redHead.png" alt="">
+
+            <div class="inside" id="2">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quisdeda daawdawd wadadaw rwgh vdw</p>
+                <button>Explore</button>
+            </div>
+
+        </div>
+
+        <div class="flex3">
+
+            <img src="img/peaceSign.jpg" alt="">
+
+            <div class="inside" id="3">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quisdeda daawdawd wadadaw rwgh vdw</p>
+                <button>Explore</button>
+            </div>
+
+        </div>
+        <div class="flex4">
+
+            <img src="img/peaceSign.jpg" alt="">
+
+            <div class="inside" id="4">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quisdeda daawdawd wadadaw rwgh vdw</p>
+                <button>Explore</button>
+            </div>
+
+        </div>
+        <div class="flex5">
+
+            <img src="img/peaceSign.jpg" alt="">
+
+            <div class="inside" id="5">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quisdeda daawdawd wadadaw rwgh vdw</p>
+                <button>Explore</button>
+            </div>
+
+        </div>
+        <div class="flex6">
+
+            <img src="img/peaceSign.jpg" alt="">
+
+            <div class="inside" id="6">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quisdeda daawdawd wadadaw rwgh vdw</p>
+                <button>Explore</button>
+            </div>
+
+        </div>
+        <div class="flex7">
+
+            <img src="img/peaceSign.jpg" alt="">
+
+            <div class="inside" id="7">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quisdeda daawdawd wadadaw rwgh vdw</p>
+                <button>Explore</button>
+            </div>
+
+        </div>
+        <div class="flex8">
+
+            <img src="img/peaceSign.jpg" alt="">
+
+            <div class="inside" id="8">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quisdeda daawdawd wadadaw rwgh vdw</p>
+                <button>Explore</button>
+            </div>
+
+        </div>
+        <div class="flex9">
+
+            <img src="img/peaceSign.jpg" alt="">
+
+            <div class="inside" id="9">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quisdeda daawdawd wadadaw rwgh vdw</p>
+                <button>Explore</button>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="sec2">
+        <div class="left-side">
+            <img src="img/star war (1).png" alt="">
+        </div>
+
+        <div class="right-side">
+            <fieldset>
+                <legend>apointment form</legend>
+            <form>
+                <label for="name" id="Name">First Name</label>
+                <br>
+                <input id="name" title="You can put your last name here.">
+                <br>
+                <label for="L-name">Last Name</label>
+                <br>
+                <input id="L-name" title="You can put your last name here.">
+                <br>
+                <label>Date</label>
+                <br>
+                <input type="text" id="datepicker">
+            </form>
+        </fieldset>
+        </div>
+    </div>
+    
+</body>
+<footer>
+
+</footer>
+<script>
+$(document).ready(function() {
+$('.flex1').hover(
+   function () {
+      $(" #1 ").fadeIn();
+   },
+   function () {
+      $("#1").fadeOut();
+   }
+);
+});
+
+$(document).ready(function() {
+$('.flex2').hover(
+   function () {
+      $(" #2 ").fadeIn();
+   },
+   function () {
+      $("#2").fadeOut();
+   }
+);
+});
+
+$(document).ready(function() {
+$('.fle3').hover(
+   function () {
+      $(" #3 ").fadeIn();
+   },
+   function () {
+      $("#3").fadeOut();
+   }
+);
+});
+
+$(document).ready(function() {
+$('.flex4').hover(
+   function () {
+      $(" #4 ").fadeIn();
+   },
+   function () {
+      $("#4").fadeOut();
+   }
+);
+});
+
+$(document).ready(function() {
+$('.flex5').hover(
+   function () {
+      $(" #5 ").fadeIn();
+   },
+   function () {
+      $("#5").fadeOut();
+   }
+);
+});
+
+$(document).ready(function() {
+$('.flex6').hover(
+   function () {
+      $(" #6 ").fadeIn();
+   },
+   function () {
+      $("#6").fadeOut();
+   }
+);
+});
+
+$(document).ready(function() {
+$('.flex7').hover(
+   function () {
+      $(" #7 ").fadeIn();
+   },
+   function () {
+      $("#7").fadeOut();
+   }
+);
+});
+
+$(document).ready(function() {
+$('.flex8').hover(
+   function () {
+      $(" #8 ").fadeIn();
+   },
+   function () {
+      $("#8").fadeOut();
+   }
+);
+});
+
+$(document).ready(function() {
+$('.flex9').hover(
+   function () {
+      $(" #9 ").fadeIn();
+   },
+   function () {
+      $("#9").fadeOut();
+   }
+);
+});
+
+$( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+
+  $( function() {
+    $( document ).tooltip();
+  } );
+
+         /* $(document).ready(function(){
+          $(" .flex1 ").hover(function(){
+            $(" .inside ").fadeIn();
+          });
+        });  */
+    </script>
+</html>
